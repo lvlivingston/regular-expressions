@@ -1,0 +1,35 @@
+body {
+    font: 6vmin Helvetica;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: oldlace;
+    margin: 0;
+}
+ 
+form {
+    padding: 10vmin;
+    border: 2vmin solid green;
+    border-radius: 4vmin;
+    background-color: lightgreen;
+}
+ 
+form:invalid {
+    border-color: red;
+    background-color: tomato;
+}
+ 
+input {
+    font: bold 10vmin Helvetica;
+    margin: 10vmin;
+    padding: 4vmin;
+    border: 1.8vmin solid green;
+    border-radius: 3vmin;
+    background-color: oldlace;
+    outline: none;
+}
+ 
+input:invalid {
+    border-color: red;
+}

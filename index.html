@@ -1,0 +1,54 @@
+<form>
+    <input type="text" required
+        <!-- pattern="gr[ae]y"> -->
+        <!-- pattern="[5-9]"> -->
+        <!-- pattern="[0-9a-fA-f]"> -->
+        <!-- pattern="li[cs]en[cs]e"> -->
+        <!-- pattern="[Ll]auren"> -->
+        <!-- pattern="p[^ua]t"> exclude characters with ^ -->
+        <!-- pattern="\d"> shorthand for digit -->
+        <!-- pattern="\D"> shorthand for anything EXCEPT digit -->
+        <!-- pattern="\w"> any alphanumeric character + the underscore _ -->
+        <!-- pattern="\W"> anything EXCEPT alphanumeric character and the underscore _ -->
+        <!-- pattern="\s"> matches any white space character, tab, new line or carriage return -->
+        <!-- pattern="\S"> matches anything EXCEPT white space character, tab, new line or carriage return -->
+        <!-- pattern=" "> a single space, just leave one space -->
+        <!-- pattern="."> will match any character except for a line break-->
+        pattern=".">
+</form>
+
+<form>
+    <input type="text" required
+        <!-- pattern="File [A-Z][A-Z]-[1-9][0-9][0-9]"> -->
+        <!-- pattern="File [A-Z][A-Z]-[1-9]\d\d"> -->
+        <!-- pattern="File [A-Z]{2}-[1-9]\d{2}"> same as above, but {} repeat the character before by number of times inside-->
+        <!-- pattern="\d{1,5}"> any range of numbers that's 1 or 5 digits long -->
+        <!-- pattern="\d{3}-\d{2}-\d{4}"> matches social security number format-->
+        <!-- pattern="[A-Z]{1,5}"> any word that's between 1 and 5 capital letters-->
+        <!-- pattern="[A-Z]{1,5}"> -->
+        <!-- pattern="C[a]*t"> * means the a is optional or could be used as many times as you want i.e. Ct Caaaaaaat -->
+        <!-- pattern="C[a]+t"> + means it needs to be used atleast one or more times i.e. Cat or Caaaaaaat -->
+        <!-- pattern="C[a]?t"> ? means used zero or one time only i.e. Ct or Cat... not Caaaaat-->
+        pattern="C[a]?t">
+</form>
+
+<!-- Notes
+
+    What are the shortcuts in curly brace form?
+<!-- * - zero or more times {0,} -->
+<!-- + - one or more times {1,} -->
+<!-- ? - zero or one time {0,1} -->
+
+-->
+
+<!-- \+ - matches the plus symbol only... not the shortcuts -->
+
+<form>
+    <input type="text" required
+        <!-- pattern="[+-]"> this works for plus or minus if square brackets-->
+        <!-- pattern="Ca\+t"> must be "escaped" with backslash -->
+        pattern="\d+\.\d+">
+        pattern="What\?">
+</form>
+
+
